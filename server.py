@@ -45,13 +45,13 @@ print("Crop with Gravity and Scale:")
 print(crop_with_gravity_and_scale)
   
 
-Large_crop = CloudinaryImage("moving-day").build_url(transformation=[
+large_crop = CloudinaryImage("moving-day").build_url(transformation=[
   {'format': "auto", 'quality': "auto"},
   {'crop': "crop", 'gravity': 'auto', 'width': 3000, 'height': 3000},
   {'crop': "scale", 'width': 600}
   ])
-print("Gravity Auto:")
-print(gravity_auto)
+print("Large crop:")
+print(large_crop)
 
 crop_and_gravity_auto = CloudinaryImage("moving-day").build_url(transformation=[
   {'format': "auto", 'quality': "auto"},
